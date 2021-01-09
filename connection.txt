@@ -1,0 +1,3 @@
+username=abdalrazag
+password=xr#33xngAbod
+url=jdbc:mysql://localhost:3306/company

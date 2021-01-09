@@ -1,8 +1,18 @@
 package com.company;
 
-public class Main {
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
-    public static void main(String[] args) {
-	// write your code here
+public class Main {
+    public static void main(String[] args) throws IOException, SQLException {
+
+        EmployeeDAO dao = new EmployeeDAO();
+        List<Employee> employeesBunch = dao.getAllEmployee();
+
+        for (Employee employee : employeesBunch){
+            System.out.println(employee);
+        }
+
     }
 }
